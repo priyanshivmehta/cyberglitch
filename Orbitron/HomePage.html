@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="myFunction()">
+    <header  style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="navbar">
+            <div class="logo"><a href="HomePage.html" class="logo"><img class="mylogo" src="../Orbitron/image/OrbitronLogo-removebg-preview.png" alt="ORBITRON"></a></div>
+            <ul class="links">
+                <li><a href="HomePage.html" id="tabs">Home</a></li>
+                <li><a href="../../login\login\loginpage.html"  id="tabs">3D Visualization</a></li>
+                <li><a href="../newstab_final/newstab.html" id="tabs">News</a></li>
+                <li><a href="../cosmos/new.html" id="tabs">Cosmology</a></li>
+                <li><a href="Quiz.html" id="tabs">Quiz</a></li>
+                <li><a href="support.html" id="tabs">About Us</a></li>
+            </ul>
+            <ul class="links">
+                <li><a class="auth-link" href="..\login\login\loginpage.html" id="tabs1">Login</a></li>
+                <li><a class="auth-link" href="..\login\login\signup.html" id="tabs1">Sign Up</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color:rgb(138, 189, 234);"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a  href="..\login\login\loginpage.html" style="color:white" id="tabs"> Login</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a  href="..\login\login\signup.html" style="color:white" id="tabs">Sign Up</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../../login\login\loginpage.html" id="tabs">3D Visualization</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../newstab_final/newstab.html" id="tabs">News</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../cosmos/new.html" id="tabs">Cosmology</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="Quiz.html" id="tabs">Quiz</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="support.html" id="tabs">About Us</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+        </div>
+        <script src="script.js"></script>
+        
+        <div style="margin-top:100px">
+        <video autoplay muted loop id="myVideo">
+            <source src="solarsystem_video.mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <!-- <p id="credits">Credit: Anthony Mernacaj</p> -->
+            <h1 class="fade-in-word" style="letter-spacing:0.11rem; margin-bottom:1rem">Embark on an interstellar journey and explore our 3D solar system visualization</h1>
+            <a class="fade-in-word" href="../../login\login\loginpage.html" id="knowmore1">3D Visualization</a>
+          </div>
+        </div>
+          <br>
+          
+          <br height="10px">
+          <hr style="color:white 2px solid; margin-top:20px;">
+          
+          <table>
+            <tr class="cosmoheading fade-in">
+              <td><h1 class="cosmotext">Discover the cosmic enigmas</h1></td>
+              <td><h3 class="cosmosubtext">Uncover how these celestial objects challenge our understanding of space and time, and learn about the latest discoveries and theories that continue to captivate scientists and enthusiasts alike.</h3></td>
+            </tr>
+          </table>
+
+          <div style="display:inline-block">
+              <center><div id="quescosmo" class="fade-in-word">
+                  <h2 style="letter-spacing:0.11rem;"><img src="../Orbitron/image/wormhole (5).png" style="margin-right:10px"><a class="cos" href="../cosmos/new.html">Wormhole</a></h2>
+                <p class="para-font">A theoretical passage through space-time that creates shortcuts for long <br> journeys across the universe.</p>
+              </div>
+              <div id="quescosmo" class="fade-in-word">
+                <h2 style="letter-spacing:0.11rem;"><img src="../Orbitron/image/black-hole (1).png" style="margin-right:10px"><a class="cos" href="../cosmos/new.html">Black Hole</a></h2>
+                <p class="para-font">A region of space where gravity is so strong that nothing, not even <br> light, can escape from it.</p>
+              </div>
+              <div id="quescosmo" class="fade-in-word">
+                <h2 style="letter-spacing:0.11rem;"><img src="../Orbitron/image/quasar.png" style="margin-right:10px"><a class="cos" href="../cosmos/new.html">Quasars</a></h2>
+                <p class="para-font">Extremely luminous active galactic nuclei, powered by supermassive black holes. <br> These distant and powerful objects shine brighter than entire galaxies.</p>
+              </div></center>
+          </div>
+        
+
+          <hr style="color:white 2px solid; margin-top:50px;">
+
+
+        <div class="container">
+                <img src="../Orbitron/image/Screenshot 2024-07-19 231232.jpg" alt="News" style="width:100%;">
+                <div  class="top-right fade-in">From a myriad of moon missions to a record-breaking sun swoop</div>
+                <a class="btn fade-in" href="../newstab_final/newstab.html" id="knowmore">Know More</a>
+        </div>
+        <p id="credits">Credit: ISRO / ESA / OneWeb India-2 / Jacob Hege</p>
+
+        <br>
+
+        <hr style="color:white 2px solid; margin-top:20px;">
+
+      
+        <h1 id="subtopic" style="margin-left:20px;margin-top:10px">Timeline of Space Exploration</h1>
+        <section class="design-section">
+            <div class="timeline">
+                <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+
+                    <div class="fade-in">
+                    <div class="timeline-component timeline-content">
+                            <h3 class = "timeline-heading">Pre-Space Age (Before 1957)</h3>
+                            <br>
+                                <p>• Date: Various dates before 1957</p>
+                                <br>
+                                <p>Events:</p>
+                                <p>• Early rocketry experiments by Konstantin Tsiolkovsky and Robert Goddard.</p>
+                                <p>• Formation of space agencies like NASA and USSR's Soviet space program.</p>
+                                
+                    </div>
+                    </div>
+
+                    <div class="fade-in">
+                            <div class="timeline-component timeline-content">
+                                    <h3 class = "timeline-heading">1957 - 1969: The Space Race</h3>
+                                    <br>
+                                    <p>• Date: 1957 - 1969</p>
+                                    <br>
+                                    <p>Events:</p>
+                                    <p>• 1957: Sputnik 1 - First artificial satellite.</p>
+                                    <p>• 1961: Yuri Gagarin - First human in space.</p>
+                                    <p>• 1969: Apollo 11 - First manned moon landing.</p>
+                            </div>
+                    </div>
+
+                    
+                            <div class="timeline-middle">
+                                <div class="timeline-circle"></div>
+                            </div>
+                            <div class="timeline-empty">
+                            </div>
+            
+                            <div class="timeline-empty">
+                            </div>
+            
+                           <div class="timeline-middle">
+                               <div class="timeline-circle"></div>
+                           </div>
+
+                        <div class="fade-in">
+                           <div class=" timeline-component timeline-content">
+                            <h3 class = "timeline-heading">1970s - 1990s: Space Stations and Exploration</h3>
+                            <br>
+                            <p>• Date: 1970s - 1990s.</p>
+                            <br>
+                            <p>Events:</p>
+                            <p>• 1971: Salyut 1 - First space station.</p>
+                            <p>• 1981: Space Shuttle - First reusable spacecraft.</p>
+                            <p>•1990s: International collaborations and space probes exploring the solar system.</p>
+                       </div>
+                    </div>
+
+                    <div class="fade-in">
+                       <div class="timeline-component timeline-content">
+                        <h3 class = "timeline-heading">2000s - Present: International Space Cooperation</h3>
+                        <br>
+                        <p>• Date: 2000s - Present</p>
+                        <br>
+                        <p>Events:</p>
+                        <p>• 2001: Chandrayaan-1 India's first lunar probe discovers water on the moon.</p>
+                        <p>• 2013: Mangalyaan ISRO successfully places its Mars orbiter in Mars orbit on its first attempt.</p>
+                        <p>• 2020s: Artemis program and return to the Moon plans.</p>
+                </div>
+                </div>
+                <div class="timeline-empty"></div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                   </div>
+                
+            </section>
+            <hr style="color:white 2px solid; margin-top:100px;">
+            <h1 class="fade-in-word" id="subtopic">UPCOMING LAUNCHES:</h1>
+            
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="../Orbitron/image/artemis.jpg" style="width:100%;height:85vh;object-fit:cover">
+                  <div class="text" id="font-style">ARTEMIS II (NASA)
+                    <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">SLS Rocket</p>
+                    <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Launch Date - November 2024</p>
+                </div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="../Orbitron/image/magalyaanfinal.png" style="width:100%;height:85vh;object-fit:cover">
+                  <div class="text" id="font-style"><b>MANGALYAAN-2 (ISRO)</b>
+                    <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Mark-III (LVM3)</p>
+                    <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Planned for 2024</p>
+                </div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="../Orbitron/image/nisar.webp" style="width:100%;height:85vh;object-fit:cover">
+                  <div class="text" id="font-style"><b>NISAR (NASA-ISRO SAR)</b>
+                    <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">GSLV Mk II </p>
+                    <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Launch Date - January 24</p>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="../Orbitron/image/MissionHERA_ESA_1920.webp" style="width:100%;height:85vh;object-fit:cover">
+                    <div class="text" id="font-style"><b>ESA's Hera Mission</b>
+                      <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Study the Didymos binary asteroid system</p>
+                      <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Start Date: October 2024</p>
+                  </div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="https://i0.wp.com/compass.rauias.com/wp-content/uploads/2023/12/pexels-spacex-586073-1-6569a4addbd66.webp" style="width:100%;height:85vh;object-fit:cover">
+                    <div class="text" id="font-style"><b>X-ray Polarimeter Satellite</b>
+                      <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">PSLV</p>
+                      <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Study the polarisation of cosmic X-rays</p>
+                    </div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="../Orbitron/image/RMH4iPBHsybrCo3WhDSfhF.jpg" style="width:100%;height:85vh;object-fit:cover">
+                    <div class="text" id="font-style"><b>MARTIAN MOONS EXPLORATION (JAXA)</b>
+                      <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">H3 Vehicle</p>
+                      <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Planned for 2026</p>
+                  </div>
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+            
+        <footer>
+        <div id ="footer1">
+            <p class="footerlist">ORBITRON © 2024 All Rights Reserved. </p>
+            <p class="footerlist">Terms Of Service</p>
+            <a href="support.html" class="footerlist" id="hoverfooter">About Us</a>
+            <p class="footerlist">Email: info@orbitronspace.com</p> 
+            <div style="display:inline-block">
+              <a href="https://www.instagram.com/orbitron.ltd/?igsh=dW1vdGNyb2x4OWxj"><i class="fa fa-instagram" id="socials"></i></a>
+              <i class="fa fa-youtube-play" id="socials"></i>
+              <a href="https://www.facebook.com/profile.php?id=61563782615539"> <i class="fa fa-facebook-f" id="socials"></i></a>
+              <a href="https://x.com/Orbitronpvt"><i class="fa-brands fa-x-twitter" id="socials"></i></a>
+            </div>
+            <br>
+           
+            
+        </div>
+        </footer>
+
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                 showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                 showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+             let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1
+            }
+              if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+             for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+             }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+
+
+      </header>
+</body>
+</html>

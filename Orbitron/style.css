@@ -1,0 +1,631 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#myDiv {
+    display: none;
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+body{
+    height:100vh;
+    background-color: black;
+}
+li{
+   list-style: none; 
+}
+.logo{
+    height:180px;
+    width:180px;
+    display:flex;
+    margin-left:15px;
+    margin-top:0.2rem;
+}
+
+#tabs{
+    text-decoration:none;
+    color:rgb(162, 202, 237);
+    font-size:1.25rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing:0.12rem;
+}
+#tabs:hover::after{
+    content:'';
+    width:0%;
+    height:1px;
+    display:block;
+    background:white;
+    margin:auto;
+    transition-duration: 0.3s;
+}
+#tabs:hover::after{
+    width:100%;
+}
+
+#tabs1{
+  text-decoration:none;
+  color:white;
+  font-size:1.25rem;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.12rem;
+  margin-left:auto;
+}
+#tabs1:hover{
+  color:rgb(162, 202, 237);
+  transition-duration: 0.3s;
+}
+.auth-link{
+  margin-left:auto;
+}
+header{
+    position:relative;
+   
+}
+.navbar{
+    position:fixed;
+    top:0;
+    background-color: black;
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:0.06rem;
+    z-index:1;
+    box-shadow: 0 8px 16px 0 rgba(167, 162, 162, 0.2), 0 6px 20px 0 rgba(76, 73, 73, 0.19);
+}
+.navbar.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+.links{
+    display:flex;
+    gap:2rem;
+    margin-right:2rem;
+    z-index:2;
+}
+.toggle_btn{
+    display:none;
+    cursor:pointer;
+    height:30px;
+    width:30px;
+
+}
+
+.dropdown_menu{
+  border-radius: 5px;
+    display:none;
+    position:fixed;
+    right:2rem;
+    top:40px;
+    height:0px;
+    width:300px;
+    background:black;
+    overflow:hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 16px 0 rgba(167, 162, 162, 0.2), 0 6px 20px 0 rgba(76, 73, 73, 0.19);
+}
+ #tabs:hover{
+    color:rgb(138, 189, 234);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+.dropdown_menu.open{
+    height:370px;
+}
+.dropdown_menu li{
+    font-size:35px;
+    padding:0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.dropdown_menu{
+    z-index:1;
+    width:100%;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+@media(max-width:1282px){
+    .navbar .links{
+        display:none;
+    }
+    .navbar .toggle_btn{
+        display:block;
+    }
+    .dropdown_menu{
+        display:block;
+    }
+    #quescosmo{
+      width:80%;
+      text-align: left;
+    }
+    
+}
+@media(max-width:1282px){
+    .dropdown_menu{
+        left:2rem;
+        width:unset;
+    }
+}
+
+.top-right {
+  margin-left:20px;
+  font-size: 40px;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.top-right.visible{
+  opacity:1;
+}
+.btn{
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: none;
+  color: white;
+  padding: 10px 57px 10px 57px;
+  border:1px solid white;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.btn.visible{
+  opacity:1;
+}
+
+.cosmoheading{
+  text-align: center;
+  opacity:0;
+}
+.cosmoheading.visible{
+  opacity:1;
+}
+.cosmotext{
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem; 
+  margin-bottom:1rem;
+  padding:20px;
+  text-align:left;
+  padding-right:90px;
+  font-size:40px;
+}
+.cosmosubtext{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  margin-bottom:1rem;
+  text-align:left;
+  padding-right:10px;
+}
+#quescosmo{
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  display:inline-block;
+  margin-left:10px;
+  margin-right:50px;
+  padding:20px;
+  margin-top:70px;
+  margin-left:18px;
+  border-top:0.5px solid grey;
+}
+.cos{
+  text-decoration:none;
+  color:white;
+}
+.cos:hover{
+  color:rgb(138, 189, 234);
+}
+.para-font{
+  color:white;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top:20px;
+}
+
+@media screen and (min-width:1282px){
+  .quescosmo{
+    width:20%;
+    display:inline-block;
+  }
+}
+
+#images1{
+  padding:50px;
+  right: 0;
+    bottom: 2rem;
+    max-width: 50%;
+    max-height: 50%;
+}
+#images{
+    right: 0;
+    bottom: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container {
+    position: relative;
+    color: white;
+  }
+.bottom-left {
+    font-size: 24px;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color:white;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing:0.11rem;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+  }
+  .bottom-left.visible{
+    opacity:1;
+  }
+#myVideo {
+    right: 0;
+    bottom: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .content {
+    bottom: 0;
+    font-family: "Bebas Neue", sans-serif;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    background:none;
+    cursor: pointer;
+  }
+  #credits{
+    float:right;
+    font-size:15px;
+    margin-bottom:10px;
+  }
+  #knowmore1{
+    margin-top:2rem;
+    color:white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    padding:10px 57px 10px 57px;
+    border:1px solid white;
+  }
+  #knowmore1:hover{
+    background: #ddd;
+    color:black;
+    transition-duration:0.3s;
+  }
+  #knowmore{
+    margin-top:2rem;
+    color:white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    padding:10px 57px 10px 57px;
+    border:1px solid white;
+  }
+  #knowmore:hover{
+    background: #ddd;
+    color:black;
+    transition-duration:0.3s;
+  }
+  @media screen and (max-width:670px){
+    #knowmore{
+      float:left;
+      margin-top:40px;
+    }
+    
+  }
+  @media screen and (max-width:560px){
+    #knowmore{
+      padding:5px 47px 5px 47px;
+      margin-top:50px;
+      
+    }
+    .top-right{
+      font-size:20px;
+    }
+  }
+  .button1{
+    margin-bottom:5rem;
+  }
+  #footer1{
+    padding-left:10px;
+    padding-right:10px;
+    border-top:2px solid white;
+    bottom:0;
+    text-align: center;
+    margin-top:30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    
+    }
+  .footerlist{
+    display:inline-block;
+    font-family: "Bebas Neue", sans-serif; 
+    font-size:23px;
+    bottom:0;
+    padding-right:80px;
+    color:white;
+    text-decoration:none;
+  }
+  #hoverfooter{
+    color:white;
+  }
+  #hoverfooter:hover{
+    color:rgb(138, 189, 234);
+    transition-duration: 0.3s;
+  }
+  #socials{
+    margin-top:5px;
+    font-size:24px;
+    color:grey;
+    padding:5px;
+  }
+  #socials:hover{
+    color:white;
+  }
+  @media (max-width: 768px) {
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footerlist{
+        text-align: center;
+    }
+  }
+
+
+  #subtopic{
+    height:80px;
+    color:white;
+    font-family: "Bebas Neue", sans-serif; 
+    letter-spacing:0.11rem;
+    margin-left:10px;
+  }
+  #photo1{
+    height:100%;
+    width:100%;
+  }
+  #photo{
+    max-height: 100%;
+    max-width:100%;
+  }
+  #info{
+    margin-left:10px;
+    color:white;
+    font-family: "Bebas Neue", sans-serif; 
+    letter-spacing:0.11rem;
+    padding:10px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 10px 0;
+  font-family: "Bebas Neue", sans-serif; 
+  background-image:url('https://papers.co/wallpaper/papers.co-af06-3d-solar-system-dark-space-art-minimal-26-wallpaper.jpg');
+  background-position:center;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  border:1px solid white;
+  color: white;
+  padding: 1.75rem;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:20px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+.timeline-heading{
+  font-family: "Bebas Neue", sans-serif; 
+  letter-spacing:0.11rem;
+  letter-spacing:0.11rem;
+  color:rgb(138, 189, 234);
+  font-size:25px;
+}
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image:linear-gradient(45deg, white, rgb(138, 189, 234));
+    width: 2px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, white, rgb(138, 189, 234));
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height:50%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#font-style{
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+.fade-in-word {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-word.visible {
+  opacity: 1;
+}
+
+@media screen and (max-width:650px){
+  .footer{
+    display:flex;
+  }
+}
+@media screen and (max-width:500px){
+  .footerlist{
+    display:block;
+  }
+}

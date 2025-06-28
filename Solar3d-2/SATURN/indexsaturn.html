@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saturn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body onload="myFunction()">
+    <header  style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="navbar">
+            <div class="logo"><a href="..\..\Orbitron\HomePage.html" class="logo"><img class="mylogo" src="img/logo_1.png" alt="ORBITRON"></a></div>
+            <ul class="links">
+                <li><a href="..\..\Orbitron\HomePage.html" id="tabs">Home</a></li>
+                <li><a href="../Solar3d-webd/index-solar.html" id="tabs">3D Visualization</a></li>
+                <li><a href="../../newstab_final/newstab.html" id="tabs">News</a></li>
+                <li><a href="..\..\cosmos/new.html" id="tabs">Cosmology</a></li>
+                <li><a href="..\..\Orbitron\Quiz.html" id="tabs">Quiz</a></li>
+                <li><a href="..\..\Orbitron\support.html" id="tabs">About Us</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color:rgb(138, 189, 234);"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="../Solar3d-webd/index-solar.html" id="tabs">3D Visualization</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../../newstab_final/newstab.html" id="tabs">News</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="..\..\cosmos/new.html" id="tabs">Cosmology</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="..\..\Orbitron\Quiz.html" id="tabs">Quiz</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a style="height:50px;" href="..\..\Orbitron/support.html" id="tabs">About Us</a></li>
+        </div>
+      <script src="scriptt.js"></script>
+
+
+   
+   
+   
+   <div style="margin-top:130px;margin-bottom:20px;" class="planetname">SATURN</div>
+
+   <div class="contentbox">
+      <div class="earthcontainer">
+          <div class="earth"></div>
+      </div>
+      <div class="text">
+        <b>Alternative names</b>: The Ringed Giant
+        <br>
+        <b>Diameter</b>: 120,536 km<br>
+        <b>Symbol</b>: ♄ <br>
+        <b>Orbital radius</b>: 1432.0 x10^6<br>
+        <b>Orbital period</b>: 10,747 days<br>
+        <b>Temparature</b>:	-110 C<br>
+        <b>Mass</b>: 568x10^24 kg<br>
+        <b>Mean density</b>: 687 kg/m^3<br>
+        <b>Surface gravity</b>:	9.0 m/s^2<br>
+        <!-- Earth is the planet we live on, one of eight planets in our solar system and the only known place in the universe to support life.Earth is the largest and most massive of the rocky inner planets, although it is dwarfed by the gas giants beyond the Asteroid Belt. -->
+    
+      </div>
+   </div>
+   <br><br>
+   <div class="para">
+    <p>
+    Earth is the planet we live on, one of eight planets in our solar system and the only known place in the universe to support life.Earth is the largest and most massive of the rocky inner planets, although it is dwarfed by the gas giants beyond the Asteroid Belt.Earth is the third planet from the sun, after Mercury and Venus, and before Mars. It is about 150 million kilometers (about 93 million miles) from the sun.
+    </p><br>
+    <p>
+        <b>INTERIOR</b><br><br>
+        Earth’s interior is a complex structure of superheated rocks. Most geologists recognize three major layers: the dense core, the bulky mantle, and the brittle crust. No one has ever ventured below Earth’s crust.Earth’s core is mostly made of iron and nickel. It consists of a solid center surrounded by an outer layer of liquid. The core is found about 2,900 kilometers (1,802 miles) below Earth’s surface, and has a radius of about 3,485 kilometers (2,165 miles).
+    </p><br>
+
+    <p>
+        <b>EXTERIOR</b><br><br>
+        The crust is covered by a series of constantly moving tectonic plates. New crust is created along mid-ocean ridges and rift valleys, where plates pull apart from each other in a process called rifting. Plates slide above and below each other in a process called subduction. They crash against each other in a process called faulting.Plate tectonics are also responsible for landforms such as geysers, earthquakes, and volcanoes. 
+
+
+    </p>
+   </div><br><br>
+
+   <div class="weight-calculator">
+    <h1>Calculate Your Weight on Saturn</h1>
+    <form id="weightForm">
+        <label for="weight">Enter your weight on Earth (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+        <button type="button" onclick="calculateWeightOnMercury()">Calculate</button>
+    </form>
+    <div id="result"></div>
+</div>
+<script src="weight.js"></script>
+<footer>
+    <div id ="footer1">
+        <p class="footerlist">ORBITRON © 2024 All Rights Reserved. </p>
+        <p class="footerlist">Terms Of Service</p>
+        <a href="..\..\Orbitron/support.html" class="footerlist" id="hoverfooter">About Us</a>
+        <p class="footerlist">Email: info@orbitronspace.com</p>
+        <div style="display:inline-block">
+            <a href="https://www.instagram.com/orbitron.ltd/?igsh=dW1vdGNyb2x4OWxj"><i class="fa fa-instagram" id="socials"></i></a>
+            <i class="fa fa-youtube-play" id="socials"></i>
+            <a href="https://www.facebook.com/profile.php?id=61563782615539"> <i class="fa fa-facebook-f" id="socials"></i></a>
+            <a href="https://x.com/Orbitronpvt"><i class="fa-brands fa-x-twitter" id="socials"></i></a>
+        </div>
+          <br>
+    </div> 
+    </footer>
+</header>
+
+  
+</body>
+</html>

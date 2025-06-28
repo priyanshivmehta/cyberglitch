@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final_news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> News </title>
+</head>
+<body onload="myFunction()" style="background-color:black;">
+  <header  style="display:none;" id="myDiv" class="animate-bottom">
+
+<div class="navbar">
+  <div class="logo"><a href="..\Orbitron/HomePage.html" class="logo"><img class="mylogo" src="orbitron1.png" alt="ORBITRON"></a></div>
+  <ul class="links">
+    <li><a href="..\Orbitron/HomePage.html" id="tabs">Home</a></li>
+    <li><a href="../../login/login/loginpage.html" id="tabs">3D Visualization</a></li>
+    <li><a href="newspage/newspage.html" id="tabs">News</a></li>
+    <li><a href="../cosmos/new.html" id="tabs">Cosmology</a></li>
+    <li><a href="../Orbitron/Quiz.html" id="tabs">Quiz</a></li>
+    <li><a href="../Orbitron/support.html" id="tabs">About Us</a></li>
+</ul>
+<ul class="links">
+  <li><a class="auth-link" href="..\login\login\loginpage.html" id="tabs1">Login</a></li>
+  <li><a class="auth-link" href="..\login\login\signup.html" id="tabs1">Sign Up</a></li>
+</ul>
+  <div class="toggle_btn">
+      <i class="fa-solid fa-bars" style="color:rgb(138, 189, 234);"></i>
+  </div>
+</div>
+<div class="dropdown_menu">
+  <li><a  href="..\login\login\loginpage.html" style="color:white" id="tabs"> Login</a></li>
+      <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+      <li><a  href="..\login\login\signup.html" style="color:white" id="tabs">Sign Up</a></li>
+      <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../../login/login/loginpage.html" id="tabs">3D Visualization</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="newspage/newspage.html" id="tabs">News</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../cosmos/new.html" id="tabs">Cosmology</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../Orbitron/Quiz.html" id="tabs">Quiz</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a style="height:50px;" href="../Orbitron/support.html" id="tabs">About us</a></li>
+        </div>
+
+  <div class="blog-section" id="blog-section">
+    <div class="section-content blog">
+      <div class="title">
+        <h2 style="margin-top:130px"> Latest Projects </h2>
+      </div>
+      <div style="margin-top:50px;" class="cards">
+        <div class="card">
+          <div class="image-section">
+            <img src="https://cdn.mos.cms.futurecdn.net/4ZQ826gycNz4ovTAQs2EsC-970-80.jpg.webp">
+          </div>
+         
+          <div class="article">
+            <h4>ARIANE-6</h4>
+            <p> The European Space Agency's Ariane 6 rocket is scheduled for its inaugural flight in mid-2024. This
+              heavy-lift vehicle will enhance Europe's access to space.</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.space.com/europe-ariane-6-on-launch-pad" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p> Inaugural flight in mid-2024</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="https://cdn.mos.cms.futurecdn.net/yz7fipLuGaX5hPiJcJ3pD5-1200-80.jpg">
+          </div>
+          <div class="article">
+            <h4>Mars Express</h4>
+            <p>This ongoing ESA mission aims to complete a detailed map of Mars' atmosphere and surface, and study its
+              moon Phobos​ </p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.astronomy.com/space-exploration/space-missions-a-list-of-current-and-upcoming-voyages/"
+              class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Ongoing</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="https://cdn.mos.cms.futurecdn.net/sEFN7txNCgehrZZVPjd68f-970-80.jpg.webp">
+          </div>
+          <div class="article">
+            <h4>Boeing Starliner</h4>
+            <p> The first crewed test flight of Boeing's Starliner spacecraft is planned for mid-April 2024. This
+              mission will transport astronauts to the International Space Station as part of NASA's Commercial Crew
+              Program​</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.space.com/spaceflight-missions-to-watch-2024" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Mid-April 2024</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="https://cdn.mos.cms.futurecdn.net/sPMod3MfLJCr2ormGSuuLn.jpg">
+          </div>
+          <div class="article">
+            <h4>Dragonfly</h4>
+            <p> This NASA mission involves a dual-quadcopter exploring Saturn's moon Titan. Scheduled for launch in
+              2027, it aims to investigate Titan's habitability</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.astronomy.com/space-exploration/space-missions-a-list-of-current-and-upcoming-voyages/"
+              class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launch in 2027 </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="https://cdn.mos.cms.futurecdn.net/4xcjBXymHPvtBnkm6JDDpn.jpg">
+          </div>
+          <div class="article">
+            <h4>Lunar Reconnaissance Orbiter</h4>
+            <p> The Lunar Reconnaissance Orbiter (LRO) is a robotic spacecraft launched by NASA in 2009 to orbit the
+              moon and collect data about it. The LRO's primary goal is to make scientific discoveries about the moon,
+              including creating a 3D map of its surface, identifying potential landing sites and resources, and
+              studying its radiation environment</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://science.nasa.gov/mission/lro/" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launched in 2009</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgXxEGHGShuGnc59iCSscqBxahD_Mc4mA5vkHg7ny8Xy6FEgaYVOcU_K5ZgIObBseRT2Q&usqp=CAU">
+          </div>
+          <div class="article">
+            <h4>JUICE</h4>
+            <p> The Jupiter Icy Moons Explorer (JUICE) mission, launched in April 2023, will continue its journey to
+              study Jupiter and its moons Ganymede, Callisto, and Europa​.</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.astronomy.com/space-exploration/space-missions-a-list-of-current-and-upcoming-voyages/"
+              class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>April 2023</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-section">
+            <img src="https://cdn.mos.cms.futurecdn.net/seiCprfQcq4gHCNfwGtyw3-1200-80.jpg.webp">
+          </div>
+          <div class="article">
+            <h4>EUROPA CLIPPER</h4>
+            <p> NASA's Europa Clipper is scheduled to launch on October 6, 2024. It will study Jupiter's moon Europa to
+              assess its habitability and investigate its subsurface ocean​</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.space.com/europa-clipper-mission-explained" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launch on October 6, 2024</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-section" style="height:32vh">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYPleCCg_Q4KT7Bf2YcfHhYhK0THEuAfJxA&s">
+          </div>
+          <div class="article">
+            <h4>Parker Solar Probe</h4>
+            <p>The Parker Solar Probe is a NASA space probe launched in 2018 with the mission of making observations of
+              the outer corona of the Sun. It will approach to within 9.86 solar radii from the center of the Sun, and
+              by 2025 will travel, at closest approach.It is the fastest object ever built. </p>
+          </div>
+          <div class="bog-view">
+            <a href="https://en.wikipedia.org/wiki/Parker_Solar_Probe" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launched in 2018</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="image-section" style="height:32vh">
+            <img src="https://cdn.mos.cms.futurecdn.net/qQB38XLfsR4D4TthVAypK3-1200-80.jpg">
+          </div>
+          <div class="article">
+            <h4>X-Ray Polarimeter Satellite (XPoSat)</h4>
+            <p> This Indian Space Mission is scheduled for launch in 2024 and will investigate the polarization of
+              cosmic X-rays and examine the 50 brightest known celestial objects in the universe</p>
+          </div>
+          <div class="bog-view">
+            <a href="" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launch 2024</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-section" style="height:32vh">
+            <img
+              src="https://images.deccanherald.com/deccanherald%2F2023-08%2F113e4b2c-94a2-495e-ac80-100fd9d581c5%2FChandrayaan_3_components.jpg?rect=1151%2C0%2C1634%2C2179">
+          </div>
+          <div class="article">
+            <h4>Chandrayaan-3</h4>
+            <p> Chandrayaan-3 is the third mission in the Chandrayaan programme, a series of lunar-exploration missions
+              developed by the Indian Space Research Organisation. The mission consists of a Vikram lunar lander and a
+              Pragyan lunar rover was launched from Satish Dhawan Space Centre on 14 July 2023.</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.isro.gov.in/Chandrayaan3_Details.html" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>July 12, 2023</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-section" style="height:32vh">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Iss071e182991.jpg/800px-Iss071e182991.jpg">
+          </div>
+          <div class="article">
+            <h4>Hera</h4>
+            <p> ESA's Hera mission will launch in October 2024 to study the Didymos asteroid system, following up on
+              NASA's DART mission which tested asteroid deflection technology</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://en.wikipedia.org/wiki/2024_in_spaceflight" class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launch in October 2024</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-section" style="height:32vh">
+            <img src="https://www.astronomy.com/uploads/2024/03/odysseus-moon-lander.jpg">
+          </div>
+          <div class="article">
+            <h4>Intuitive Machines IM-1</h4>
+            <p> Launched in early 2024, the IM-1 lunar lander by Intuitive Machines aims to test technologies for NASA's
+              Artemis program and perform scientific investigations on the Moon​,</p>
+          </div>
+          <div class="bog-view">
+            <a href="https://www.astronomy.com/space-exploration/odysseus-traveled-to-the-moon-broke-its-leg-and-still-pinged-earth-to-tell-the-story/"
+              class="button">Read More</a>
+          </div>
+          <div class="posted-date">
+            <p>Launched in early 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <div id ="footer1">
+        <p class="footerlist">ORBITRON © 2024 All Rights Reserved. </p>
+        <p class="footerlist">Terms Of Service</p>
+        <a href="../Orbitron/support.html" class="footerlist" id="hoverfooter">About Us</a>
+        <p class="footerlist">Email: info@orbitronspace.com</p> 
+        <div style="display:inline-block">
+          <a href="https://www.instagram.com/orbitron.ltd/?igsh=dW1vdGNyb2x4OWxj"><i class="fa fa-instagram" id="socials"></i></a>
+          <i class="fa fa-youtube-play" id="socials"></i>
+          <a href="https://www.facebook.com/profile.php?id=61563782615539"> <i class="fa fa-facebook-f" id="socials"></i></a>
+          <a href="https://x.com/Orbitronpvt"><i class="fa-brands fa-x-twitter" id="socials"></i></a>
+      </div>
+        <br>
+  </div>
+    </footer>
+    </header>
+</body>
+</html>
+    

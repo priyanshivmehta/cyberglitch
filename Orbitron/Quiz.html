@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleQ.css"/>
+</head>
+<body onload="myFunction()" >
+    <header  style="display:none;" id="myDiv" class="animate-bottom">
+        <div class="navbar">
+            <div class="logo"><a href="HomePage.html" class="logo"><img class="mylogo" src="../Orbitron/image/OrbitronLogo-removebg-preview.png" alt="ORBITRON"></a></div>
+            <ul class="links">
+                <li><a href="HomePage.html" id="tabs">Home</a></li>
+                <li><a href="../../login\login\loginpage.html" id="tabs">3D Visualization</a></li>
+                <li><a href="../newstab_final/newstab.html" id="tabs">News</a></li>
+                <li><a href="../cosmos/new.html" id="tabs">Cosmology</a></li>
+                <li><a href="Quiz.html" id="tabs">Quiz</a></li>
+                <li><a href="support.html" id="tabs">About Us</a></li>
+            </ul>
+            <ul class="links">
+                <li><a class="auth-link" href="..\login\login\loginpage.html" id="tabs1">Login</a></li>
+                <li><a class="auth-link" href="..\login\login\signup.html" id="tabs1">Sign Up</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color:rgb(138, 189, 234)"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a  href="..\login\login\loginpage.html" style="color:white" id="tabs"> Login</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a  href="..\login\login\signup.html" style="color:white" id="tabs">Sign Up</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../../login\login\loginpage.html" id="tabs">3D Visualization</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../newstab_final/newstab.html" id="tabs">News</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="../cosmos/new.html" id="tabs">Cosmology</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a href="Quiz.html" id="tabs">Quiz</a></li>
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
+            <li><a style="height:50px;" href="support.html" id="tabs">About Us</a></li>
+        </div>
+            <div class="app">
+                <h1 style="font-family: 'Bebas Neue', sans-serif; color:white;letter-spacing:0.11rem;">Test your knowledge!</h1>
+                <hr style="color:grey">
+                <br>
+                <br>
+                <br>
+                <div class="quiz">
+                    <h2 style="font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;" id="question">question 1</h2>
+                    <div id="answer-buttons">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                    <button style="font-family: 'Bebas Neue', sans-serif;letter-spacing:0.11rem;" id="next-btn">NEXT</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id ="footer1">
+                <p class="footerlist">ORBITRON © 2024 All Rights Reserved. </p>
+                <p class="footerlist">Terms Of Service</p>
+                <a href="support.html" class="footerlist" id="hoverfooter">About Us</a>
+                <p class="footerlist">Email: info@orbitronspace.com</p>
+                <div style="display:inline-block">
+                    <a href="https://www.instagram.com/orbitron.ltd/?igsh=dW1vdGNyb2x4OWxj"><i class="fa fa-instagram" id="socials"></i></a>
+                    <i class="fa fa-youtube-play" id="socials"></i>
+                    <a href="https://www.facebook.com/profile.php?id=61563782615539"> <i class="fa fa-facebook-f" id="socials"></i></a>
+                    <a href="https://x.com/Orbitronpvt"><i class="fa-brands fa-x-twitter" id="socials"></i></a>
+                </div>
+            </div>
+            </footer>
+        </header>
+        <script src="script.js"></script>
+    </body> 
+</html>
+        
